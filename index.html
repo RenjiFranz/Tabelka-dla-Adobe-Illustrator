@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./ext.js"></script>
+<script src="./lib/CSInterface-4.0.0.js"></script>
+<link id="ppstyle" rel="stylesheet" type="text/css" href="css/style.css">
+<title>CRS TABELKA</title>
+</head>
+
+<body onLoad="onLoaded()" ></body>
+<div id="content" >
+	<div class="but_contener">
+		<button class="box" onClick="onClickButton01()">Wstaw Tabelkę</button>
+		<button class="box" onClick="onClickButton02()">Odśwież</button>
+		<input type="checkbox" id="TEST" class="checkbox_class"> <span>Powiększ artwork</span>
+	</div>
+
+	<div id="reloadDiv">
+	<div class = "colorContener" >
+		<p>Separacje</p>
+		<div id = "a1" class="sep_box" >
+			<div class="sep_box_lp" >1</div>
+			<div class="sep_box_move" id="color_box_0" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s0">
+				<div class = "cMark" id="colorMark_0"></div>
+				<input type="checkbox" class="sep_box_checkbox" value="0"   id="c0">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box" >
+			<div class="sep_box_lp">2</div>
+			<div class="sep_box_move" draggable="true"id="color_box_1">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s1">
+				<div class = "cMark" id="colorMark_1"></div>
+				<input type="checkbox" class="sep_box_checkbox" value="1"    id="c1">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box">
+			<div class="sep_box_lp">3</div>
+			<div class="sep_box_move"  id="color_box_2" draggable="true" >
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s2">
+				<div class = "cMark" id="colorMark_2"></div>
+				<input type="checkbox" class="sep_box_checkbox"value="2"    id="c2">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">4</div>
+			<div class="sep_box_move" id="color_box_3" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s3">
+				<div class = "cMark" id="colorMark_3"></div>
+				<input type="checkbox" class="sep_box_checkbox" value="3"    id="c3">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">5</div>
+			<div class="sep_box_move" id="color_box_4" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s4">
+				<div class = "cMark" id="colorMark_4"></div>
+				<input type="checkbox" class="sep_box_checkbox" value="4"    id="c4">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">6</div>
+			<div class="sep_box_move" id="color_box_5" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s5">
+				<div class = "cMark" id="colorMark_5"></div>
+				<input type="checkbox" class="sep_box_checkbox" value="5"    id="c5">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">7</div>
+			<div class="sep_box_move" id="color_box_6" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s6">
+				<div class = "cMark" id="colorMark_6"></div>
+				<input type="checkbox" class="sep_box_checkbox"  value="6"    id="c6">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">8</div>
+			<div class="sep_box_move" id="color_box_7" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s7">
+				<div class = "cMark" id="colorMark_7"></div>
+				<input type="checkbox" class="sep_box_checkbox"  value="7"   id="c7">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">9</div>
+			<div class="sep_box_move" id="color_box_8" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s8">
+				<div class = "cMark" id="colorMark_8"></div>
+				<input type="checkbox" class="sep_box_checkbox"  value="8"   id="c8">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">10</div>
+			<div class="sep_box_move" id="color_box_9" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s9">
+				<div class = "cMark" id="colorMark_9"></div>
+				<input type="checkbox" class="sep_box_checkbox"   value="9" c  id="c9">
+			</div>	
+		</div>
+		
+	</div>
+
+	<div class = "techContener">
+		<p>Kolory techniczne</p>
+		<div id = "a1" class="sep_box" >
+			<div class="sep_box_lp">1</div>
+			<div class="sep_box_move" id="color_box_10" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s10">
+				<div class = "cMark" id="colorMark_10"></div>
+				<input type="checkbox" class="sep_box_checkbox"  value="10"  id="c10">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box" >
+			<div class="sep_box_lp">2</div>
+			<div class="sep_box_move" id="color_box_11" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s11">
+				<div class = "cMark" id="colorMark_11"></div>
+				<input type="checkbox" class="sep_box_checkbox"  value="11"  id="c11">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">3</div>
+			<div class="sep_box_move" id="color_box_12" draggable="true">
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s12">
+				<div class = "cMark" id="colorMark_12"></div>
+				<input type="checkbox" class="sep_box_checkbox"  value="12"   id="c12">
+			</div>	
+		</div>
+		<div id = "a1" class="sep_box"  >
+			<div class="sep_box_lp">4</div>
+			<div class="sep_box_move" id="color_box_13" draggable="true" >
+				<input class = "sep_box_input" type="text" value="Nazwa separacji" id="s13">
+				<div class = "cMark" id="colorMark_13"></div>
+				<input type="checkbox" class="sep_box_checkbox" value="13"   id="c13">
+			</div>	
+		</div>
+	</div>
+	</div>
+	<div>
+	<button class="box" onClick="onClickButton03()">Wypełnij</button>
+	<!--  <button class="box" onClick="onClickButton04()">Odśwież separacje</button>-->
+</div>	
+</div>
+
+</body>
+<script>
+var start = document.getElementById("reloadDiv").innerHTML;
+/*
+
+
+function onClickButton04() {
+	onLoaded();
+
+}
+/*function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  
+  ev.target.appendChild(document.getElementById(data));
+}*/
+</script>
+</html>

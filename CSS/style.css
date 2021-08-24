@@ -1,0 +1,140 @@
+
+body {
+	text-align:center;
+	background-color: rgb(77, 77, 77);
+}
+#content {
+	margin-right:auto;
+	margin-left:auto;
+	vertical-align:middle;
+	width:250px;
+}
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	font-weight: 800;
+	font-family:Arial, Helvetica, sans-serif;
+	color: white;
+}
+span{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 10px;
+	font-weight: 500;
+	font-family:Arial, Helvetica, sans-serif;
+	color: white;
+}
+.box {
+	border: 0.5px solid #666;
+	/*background-color: #ddd;*/
+	border-radius: .5em;
+	padding: 6px;
+	cursor: move;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	color: black;
+  }
+  .cMark {
+	border: 0.5px solid #666;
+	/*background-color: #ddd;*/
+	border-radius: .5em;
+	padding: 9px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	background-color: 0;
+  }
+.over {
+	background-color: red;
+	
+	
+  }
+
+.colorContener{	
+	width: 100%;
+	height: 270px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	/*border: 1px solid #666;
+	background-color: rgb(85, 84, 84);
+	border-radius: .3em;*/
+	display: grid;
+  	grid-template-columns: repeat(4, 1);
+  	gap: 0.5px;
+	
+}
+.techContener{	
+	width: 100%;
+	height: 120px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	/*border: 1px solid #666;
+	background-color: rgb(85, 84, 84);*/
+	border-radius: .3em;
+	display: grid;
+  	grid-template-columns: repeat(4, 1);
+  	gap: 0.5px;
+	
+}
+.sep_box{
+	border: 1px solid rgb(19, 19, 19);
+	border-radius: .3em;
+	padding-left: 2px;
+	padding-top: 1px;
+	padding-bottom: 2px;
+	padding-right: 2px;;
+	height: 20px;	
+	display: grid;
+  	grid-template-columns: repeat(3, 2fr);
+  	gap: 5px;
+  }
+  .sep_box_move{
+	
+	display: grid;
+  	grid-template-columns: repeat(2, 2fr);
+  	gap: 5px;
+	  display: inline-flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .sep_box_lp {
+	border: 0.5px solid #666;
+	background-color: #ddd;
+	border-radius: .3em;	
+	width: 16px;
+/*	height: 14px;*/
+	padding: 0.15em;
+	font-size: 0.7em;
+	justify-content: center;
+	align-items: center;
+	
+  }
+
+  .sep_box_input{
+	border: 0.5px solid #666;
+	background-color: #ddd;
+	border-radius: .3em;	
+	width: 180px;
+	height: 18px;
+	
+	font-size: 0.6em;
+	padding-top: 0;
+	padding-bottom: 0;
+  }
+  .sep_box_checkbox{
+	border: 1px solid #666;
+	background-color: #ddd;
+	border-radius: .3em;
+	
+	
+	padding-top: 3px;
+	padding-bottom: 1px;
+	/*color: white;*/
+	
+  }	
+
+
